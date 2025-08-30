@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://w7.pngwing.com/pngs/82/380/png-transparent-helpline-mental-health-information-technical-support-al-anon-alateen-new-year-wish-miscellaneous-text-logo-thumbnail.png"
+      type="image/x-icon"/>
+    <title>Emergency Hotline</title>
+    <!-- Tailwind-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+  </head>
 <body>
-    
+    <!-- Header-->
+    <header>
+        <!--1. Navbar -->
+      <div
+        class="w-11/12 mx-auto flex flex-col items-center lg:flex-row justify-between gap-3 p-3">
+        <div class="">
+          <div class="flex items-center gap-3">
+            <img src="./assets/logo.png" alt="" srcset="" class="w-10" />
+            <h4 class="text-[#006747] font-bold">Emergency <br />Service</h4>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <div class="bg-[#41ff6b1a] py-1 px-4 rounded-full">
+            <p class="flex items-center gap-2">
+              <span id="counter" class="font-bold">0</span>
+              <span class="text-red-600"
+                ><i class="fa-solid fa-heart"></i></span>
+            </p>
+          </div>
+          <div class="bg-[#41ff6b1a] py-1 px-4 rounded-full">
+            <p class="flex items-center gap-2">
+              <span id="coin-counter" class="font-bold">100</span>
+              <span class="text-orange-600">
+                <img src="./assets/coin.png" alt="" srcset="" class="w-5"/></span></p>
+          </div>
+          <div class="bg-[#00a63e] py-1 px-4 rounded-full text-white">
+            <p class="flex items-center gap-2">
+              <span id="copy-counter" class="font-bold">0</span>
+              <span class="text-white font-bold">Copy</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner part -->
+        <div
+        id="banner"
+        class="text-center text-white bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-6 px-4">
+        <img
+          src="./assets/logo-dark.png"
+          alt=""
+          srcset=""
+          class="w-24 mx-auto"/>
+        <h2 class="font-bold text-xl">Emergency Service Directory</h2>
+        <p>Government Emergency Services at Your      Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh</p>
+      </div>
+    </header>
+
+<!-- js link -->
+ <script src="app.js"></script>
 </body>
 </html>
